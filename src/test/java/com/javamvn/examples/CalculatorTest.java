@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class CalculatorTest {
 
-    public static Calculator app;
+    static Calculator app;
 
     @BeforeClass
     public static void initCalculator(){
@@ -27,10 +27,15 @@ public class CalculatorTest {
         assertEquals(9,result);
     }
 
-    //@Ignore
     @Test
     public void testSubtract(){
         int result = app.subtract(5,5);
         assertEquals(0,result);
+    }
+
+    @Test
+    public void testMultiplication(){
+        long result = app.multiplication(5,8);
+        assertEquals(40,result);
     }
 }
