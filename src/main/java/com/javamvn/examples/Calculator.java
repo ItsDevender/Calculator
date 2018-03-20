@@ -1,14 +1,16 @@
 package com.javamvn.examples;
 
 public class Calculator {
-    public int add(int a,int b) {
+    
+    /** {@inheritDoc} */
+    public final int add(final int a, final int b) {
         return a + b;
     }
-    public int subtract(int a,int b) {
+    public int subtract(final int a, final int b) {
         return a - b;
     }
 
-    public int multiplication(int a,int b) {
+    public int multiplication(final int a, final int b) {
         return a * b;
     }
 }
